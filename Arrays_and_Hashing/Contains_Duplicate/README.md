@@ -72,4 +72,4 @@ def containsDuplicate(nums: List[int]) -> bool:
 
 In this case, we create a hash set to record which value we've been check in the past. From the first loop over `n` which iterates over `nums` depends on `n`, the size of `nums` which takes `O(n)` times. within every iterations, we check if the number exists within the `hash` already, if it does return `True` otherwise, add the number to the `hash` for record. But due to the properties of hash set, checking a hash set and adding a new number to hash set only costs `O(1)` time. Therefore, the algorithm overall take time complexity of `O(n)`.
 
-However, for the size complexity, the size of hash set increases overtime as we checks over the elements in the list (upto `n` elements). Hence, the space complexity of the algorithm is `O(1)`.
+However, for the size complexity, the size of hash set increases overtime as we checks over the elements in the list (upto `n` elements). Hence, the space complexity of the algorithm is `O(n)`.
